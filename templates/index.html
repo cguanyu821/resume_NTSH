@@ -30,6 +30,22 @@
             opacity: 0.9;
         }
 
+        /* QR Code */
+        .qrcode {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            padding: 8px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .qrcode-text {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -83,6 +99,15 @@
 <header>
     <h1>新北高中 陳冠宇</h1>
     <p>高中生學習歷程檔案｜讀書計畫與成長紀錄</p>
+
+    <!-- QR Code -->
+    <img
+        src="{{ url_for('static', filename='images/qrcode.png') }}"
+        alt="學習歷程 QR Code"
+        class="qrcode"
+    >
+
+    <p class="qrcode-text">掃描 QR Code 查看我的學習歷程</p>
 </header>
 
 <div class="container">
@@ -127,7 +152,7 @@
 </div>
 
 <footer>
-    © 2026 王福星 學習歷程檔案
+    © 2026 陳冠宇 學習歷程檔案
 </footer>
 
 </body>
